@@ -1,0 +1,135 @@
+@import "../../../sass/abstracts/_variables";
+@import "../../../sass/abstracts/_mixins";
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+@media screen and (max-width: 470px) {
+  .form-container {
+    display: block;
+  }
+}
+
+.block-inputs {
+  width: 40%;
+  height: 365px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media screen and (max-width: 775px) {
+  .block-inputs {
+    width: 100%;
+  }
+}
+.inputs-name {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-firstName {
+  @include input-style($color-input, $border-input, 225px, 31px);
+}
+
+.input-lastName {
+  @include input-style($color-input, $border-input, 225px, 31px);
+}
+
+@media screen and (max-width: 478px) {
+  .inputs-name {
+    flex-direction: column;
+  }
+  .input-firstName {
+    @include input-style($color-input, $border-input, 100%, 31px);
+    margin-bottom: 10px;
+  }
+  .input-lastName {
+    @include input-style($color-input, $border-input, 100%, 31px);
+  }
+}
+.inputs-company {
+  display: flex;
+}
+@media screen and (max-width: 508px) {
+  .inputs-company {
+    flex-wrap: wrap;
+  }
+}
+.input-company {
+  @include input-style($color-input, $border-input, 100%, 31px);
+}
+
+.input-email {
+  @include input-style($color-input, $border-input, 100%, 31px);
+}
+
+.input-tel {
+  @include input-style($color-input, $border-input, 100%, 31px);
+}
+
+.input-country {
+  @include input-style($color-input, $border-input, 100%, 31px);
+}
+
+.inputs-live {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-city {
+  @include input-style($color-input, $border-input, 225px, 31px);
+}
+.input-street {
+  @include input-style($color-input, $border-input, 225px, 31px);
+}
+@media screen and (max-width: 478px) {
+  .inputs-live {
+    flex-direction: column;
+  }
+  .input-city {
+    @include input-style($color-input, $border-input, 100%, 31px);
+    margin-bottom: 10px;
+  }
+  .input-street {
+    @include input-style($color-input, $border-input, 100%, 31px);
+  }
+}
+
+.inputs-address {
+  @include input-style($color-input, $border-input, 100%, 31px);
+}
+.input-emailCode {
+  @include input-style($color-input, $border-input, 100%, 31px);
+}
+.label-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  font-weight: 700;
+  color: #d8d9db;
+}
+.file-input {
+  color: transparent;
+  width: 100%;
+
+  &::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  &::before {
+    color: #007cb9;
+    content: "+ Логотип";
+    cursor: pointer;
+    display: inline-block;
+    outline: none;
+    padding: 5px 8px;
+    white-space: nowrap;
+  }
+  &::placeholder {
+    color: #007cb9;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: left;
+  }
+}

@@ -1,0 +1,9 @@
+.flex-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-group > .btn {
+  flex: 0 1 auto;
+}

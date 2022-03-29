@@ -1,0 +1,12 @@
+@mixin input-style(
+  $backgroundColor,
+  $borderRadius,
+  $input-width: 0px,
+  $input-height: 0px
+) {
+  width: $input-width;
+  height: $input-height;
+  background: $backgroundColor;
+  border-radius: $borderRadius;
+  border: none;
+}

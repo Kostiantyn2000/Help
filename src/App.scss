@@ -1,0 +1,12 @@
+@import "./sass/base/reset";
+@import "./sass/base/typography";
+
+body {
+  color: #000;
+  background-color: #fff;
+  font-family: "Gilroy", sans-serif;
+}
+
+.help-section {
+  margin-bottom: 100px;
+}

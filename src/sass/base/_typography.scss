@@ -1,0 +1,50 @@
+$geometria-font-path: "../../assets/fonts/Geometria/";
+
+@font-face {
+  font-family: "Geometria";
+  src: url("#{$geometria-font-path}Geometria.eot");
+  src: local("Geometria"),
+    url("#{$geometria-font-path}Geometria.eot?#iefix")
+      format("embedded-opentype"),
+    url("#{$geometria-font-path}Geometria.woff2") format("woff2"),
+    url("#{$geometria-font-path}Geometria.woff") format("woff"),
+    url("#{$geometria-font-path}Geometria.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Geometria";
+  src: url("#{$geometria-font-path}Geometria-Bold.eot");
+  src: url("#{$geometria-font-path}Geometria-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("#{$geometria-font-path}Geometria-Bold.ttf") format("truetype"),
+    url("#{$geometria-font-path}Geometria-Bold.woff") format("woff"),
+    url("#{$geometria-font-path}Geometria-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Geometria";
+  src: url("#{$geometria-font-path}Geometria-ExtraBold.eot");
+  src: url("#{$geometria-font-path}Geometria-ExtraBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("#{$geometria-font-path}Geometria-ExtraBold.ttf") format("truetype"),
+    url("#{$geometria-font-path}Geometria-ExtraBold.woff") format("woff"),
+    url("#{$geometria-font-path}Geometria-ExtraBold.woff2") format("woff2");
+  font-weight: bolder;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Geometria";
+  src: url("#{$geometria-font-path}Geometria-Light.eot");
+  src: url("#{$geometria-font-path}Geometria-Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("#{$geometria-font-path}Geometria-Light.ttf") format("truetype"),
+    url("#{$geometria-font-path}Geometria-Light.woff") format("woff"),
+    url("#{$geometria-font-path}Geometria-Light.woff2") format("woff2");
+  font-weight: lighter;
+  font-style: normal;
+}

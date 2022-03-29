@@ -1,0 +1,140 @@
+@import "../../../../../sass/abstracts/_variables";
+@import "../../../../../sass/abstracts/mixins";
+
+.content-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 758px) {
+  .content-flex {
+    flex-wrap: wrap;
+  }
+}
+
+.active-content {
+  display: block;
+}
+
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btn-container {
+  flex: 1 1 70%;
+}
+
+.title-btn {
+  font-size: 18px;
+  font-weight: 700;
+  color: #94979e;
+}
+.btn-offline {
+  background: #c8d5e5;
+}
+
+.btn-active {
+  background-color: #9c5d9a;
+}
+
+.btn-style {
+  width: 200px;
+  height: 115px;
+  border: none;
+  border-radius: 5px;
+
+  &:not(:last-child) {
+    margin-right: 25px;
+    margin-bottom: 35px;
+  }
+}
+
+.image-block {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 15px;
+}
+
+.btn_text {
+  color: white;
+  margin: 0;
+}
+
+.btn_title {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  margin-top: 10px;
+}
+.btn-title-mg {
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .card-container {
+    margin-top: 30px;
+  }
+}
+.card {
+  position: static;
+  max-width: 400px;
+  height: 230px;
+  background: #c8d5e5;
+  border-radius: 10px;
+  padding: 10px 30px;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 425px) {
+  .card {
+    height: 400px;
+  }
+}
+.title-card {
+  font-size: 18px;
+  font-weight: 700;
+  color: #94979e;
+}
+
+.number-text {
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+}
+
+.number-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.number-text-mg:not(:last-child) {
+  margin-right: 10px;
+}
+
+.number-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 463px) {
+  .number-block {
+    flex-wrap: wrap;
+    height: 100px;
+  }
+  .number-text-mg:not(:last-child) {
+    margin-right: 0px;
+  }
+}
+
+.number-input {
+  @include input-style($color-input, $border-input, 70px, 40px);
+}
+
+.number-input-validity {
+  @include input-style($color-input, $border-input, 120px, 40px);
+}
+
+.number-input-cvv {
+  @include input-style($color-input, $border-input, 120px, 40px);
+}

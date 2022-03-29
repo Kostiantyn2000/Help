@@ -1,0 +1,41 @@
+.bloc-tabs {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 991px) {
+  .bloc-tabs {
+    height: 300px;
+  }
+}
+
+.tab-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tab-text {
+  color: #dbe2ed;
+  font-size: 24px;
+  font-weight: 700;
+  margin-left: 15px;
+}
+
+.active {
+  color: #6b7085;
+}
+.tabs {
+  padding: 35px;
+  cursor: pointer;
+  border: 2px solid #dbe2ed;
+  background: white;
+  border-radius: 10px;
+}
+
+.active-tabs {
+  background: #9c5d9a;
+  border-radius: 10px;
+  border: none;
+}
