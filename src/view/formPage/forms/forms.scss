@@ -78,6 +78,15 @@
   justify-content: space-between;
 }
 
+@media screen and (max-width: 1147px) {
+  .inputs-name {
+    flex-wrap: wrap;
+  }
+  .inputs-live {
+    flex-wrap: wrap;
+  }
+}
+
 .input-city {
   @include input-style($color-input, $border-input, 225px, 31px);
 }

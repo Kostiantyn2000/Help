@@ -1,12 +1,20 @@
-.bloc-tabs {
+.block-tabs {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-@media screen and (max-width: 991px) {
-  .bloc-tabs {
-    height: 300px;
+@media screen and (max-width: 1123px) {
+  .block-tabs {
+    align-items: center;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .block-tabs {
+    justify-content: center;
+    height: 535px;
   }
 }
 
@@ -16,6 +24,12 @@
   justify-content: center;
 }
 
+@media screen and (max-width: 815px) {
+  .tab-container {
+    flex-basis: 308px;
+    justify-content: normal;
+  }
+}
 .tab-text {
   color: #dbe2ed;
   font-size: 24px;

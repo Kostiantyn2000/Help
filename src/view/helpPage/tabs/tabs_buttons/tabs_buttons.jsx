@@ -6,7 +6,7 @@ import SvgHand from "../../../../assets/svg/hand";
 import SvgWallet from "../../../../assets/svg/wallet";
 const TabsButtons = ({ toggleState, toggleTab }) => {
   return (
-    <div className="bloc-tabs">
+    <div className="block-tabs">
       <div className="tab-container">
         <button
           className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
